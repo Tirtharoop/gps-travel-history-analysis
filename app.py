@@ -160,12 +160,11 @@ if raw_bytes is None:
     st.markdown('<div class="app-title">Intelligent GPS-Based Travel History Analysis</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="app-subtitle">Transform a Google Maps Timeline export into travel insights, maps, transport '
-        "statistics, machine-learning experiments and a downloadable report.</div>",
+        "statistics and a downloadable report.</div>",
         unsafe_allow_html=True,
     )
-    left, middle, right = st.columns(3)
+    left, right = st.columns(2)
     left.markdown("#### Geospatial analytics\nStay detection, DBSCAN / K-Means place clustering, heatmaps and route maps.")
-    middle.markdown("#### Machine learning\nRandom Forest transport-mode estimation with accuracy, F1 and confusion-matrix evaluation.")
     right.markdown("#### Automated reporting\nDaily, weekly and monthly statistics rendered into a presentable PDF report.")
     st.divider()
     st.subheader("Try the demo dataset")
